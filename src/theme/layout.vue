@@ -1,0 +1,32 @@
+<template>
+    <div>
+    <app-header></app-header>
+      <section class="main-section section">
+        <router-view></router-view>
+      </section>
+      <!-- <app-footer></app-footer> -->
+    </div>
+</template>
+<script>
+    import AppHeader from './AppHeader.vue'
+    // import AppFooter from './AppFooter.vue'
+    export default {
+      components: {
+        'app-header': AppHeader
+        // 'app-footer': AppFooter
+      }
+    }
+</script>
+
+<style lang="scss">
+    @import '~bulma';
+
+    .columns{
+        flex-wrap: wrap;
+    }
+</style>
+
+
+
+
+
